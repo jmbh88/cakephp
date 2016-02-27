@@ -22,8 +22,8 @@ class UsuariosTable extends Table {
 
     public function validationDefault(Validator $validator) {
         return $validator
-                        ->notEmpty('username', 'Nombre de usuario obligatorio')
-                        ->notEmpty('password', 'Password bligatorio')
+                        ->notEmpty('username', 'Nombre de usuario es obligatorio')
+                        ->notEmpty('password', 'Password es obligatorio')
                         ->notEmpty('role', 'Rol obligatorio')
         ;
     }
